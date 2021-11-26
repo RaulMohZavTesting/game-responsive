@@ -13,44 +13,27 @@
     <link rel="icon" type="image/x-icon" href="assets/favicon.png" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/game.css" rel="stylesheet" />
 
     <!--Icons Boots-->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css"
     />
-
-    <style>
-      .bg-image-game {
-        background-image: url("assets/blue-preview.png");
-      }
-      .header-menu-game {
-        background: rgba(50, 44, 43, 0.6);
-        font-family: "Audiowide";
-        box-shadow: 2px 2px 5px #3498db;
-      }
-      .barra-lateral-game {
-        background: rgba(50, 44, 43, 0.8);
-        /*border: 2px solid #3498DB;*/
-        font-family: "Audiowide";
-        box-shadow: 2px 2px 5px #3498db;
-      }
-    </style>
   </head>
   <body class="bg-image-game">
     <div class="d-flex" id="wrapper">
       <!-- Sidebar-->
       <div class="bg-transparent" id="sidebar-wrapper">
-        <div class="sidebar-heading bg-transparent p-3">
+        <div class="sidebar-heading bg-transparent">
           <img
-            class="pt-1"
             src="https://images.vexels.com/media/users/3/235237/isolated/preview/dccfb6f325c1cc1e849a1808c53d84c0-insignia-redonda-de-casco-de-astronauta.png"
             width="40"
           />
         </div>
         <div class="list-group list-group-flush barra-lateral-game h-100">
           <div
-            class="nav flex-column nav-pills me-lg-1 m-lg-1"
+            class="nav flex-column nav-pills"
             id="v-pills-tab"
             role="tablist"
             aria-orientation="vertical"
@@ -69,12 +52,12 @@
             </button>
             <button
               class="nav-link"
-              id="v-pills-profile-tab"
+              id="v-pills-spaceships-tab"
               data-bs-toggle="pill"
-              data-bs-target="#v-pills-profile"
+              data-bs-target="#v-pills-spaceships"
               type="button"
               role="tab"
-              aria-controls="v-pills-profile"
+              aria-controls="v-pills-spaceships"
               aria-selected="false"
             >
               <i class="bi bi-cursor m-2"></i>Spaceships
@@ -214,38 +197,79 @@
         </nav>
 
         <!-- Page content-->
-        <div class="container-fluid">
-          <h1 class="mt-4"></h1>
-
-          <div class="d-flex align-items-start link-light">
+        <div
+          class="container-fluid content-tab-game h-100 py-3"
+          style="border: 3px solid white"
+        >
+          <div class="link-light">
             <div class="tab-content" id="v-pills-tabContent">
               <div
-                class="tab-pane fade show active"
+                class="tab-pane fade show active container"
                 id="v-pills-home"
                 role="tabpanel"
                 aria-labelledby="v-pills-home-tab"
               >
-                Hola, bienvenido al Dashboard.
+                <div class="dashboard text-white bg-dark mb-2">
+                  <h1 class="text-center animation-title">
+                    Welcome to Space Z GameApp
+                  </h1>
+                </div>
 
-                <div class="card mb-2 mt-1" style="width: 18rem">
-                  <img
-                    src="https://3dwarehouse.sketchup.com/warehouse/v1.0/publiccontent/527e568b-5273-4685-9c41-768c638306d2"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Nave</h5>
-                    <p class="card-text">texto de ejemplo</p>
-                  </div>
+                <!-- TWITTER -->
+                <div class="dash-cont d-flex justify-content-center">
+                  <a
+                    class="twitter-timeline"
+                    data-width="300"
+                    data-height="500"
+                    data-theme="dark"
+                    href="https://twitter.com/CryptoSpace_Z?ref_src=twsrc%5Etfw"
+                    >Tweets by CryptoSpace_Z</a
+                  >
+                  <script
+                    async
+                    src="https://platform.twitter.com/widgets.js"
+                    charset="utf-8"
+                  ></script>
                 </div>
               </div>
               <div
-                class="tab-pane fade"
-                id="v-pills-profile"
+                class="tab-pane fade container"
+                id="v-pills-spaceships"
                 role="tabpanel"
-                aria-labelledby="v-pills-profile-tab"
+                aria-labelledby="v-pills-spaceships-tab"
               >
-                bienvenido a Spaces
+                <div class="spz-stations">
+                  <p class="text-center">My Spaceships</p>
+                  <h1 class="text-center">My Spaceships</h1>
+                </div>
+                <br /><br /><br /><br />
+                <div class="d-flex justify-content-center">
+                  <div class="spinner-border text-primary" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                  </div>
+                </div>
+                <br /><br /><br /><br />
+                <div class="d-flex justify-content-center">
+                  <nav aria-label="...">
+                    <ul class="pagination">
+                      <li class="page-item disabled">
+                        <a class="page-link">Previous</a>
+                      </li>
+                      <li class="page-item active">
+                        <a class="page-link" href="#">1</a>
+                      </li>
+                      <li class="page-item disabled">
+                        <a class="page-link" href="#">2</a>
+                      </li>
+                      <li class="page-item disabled">
+                        <a class="page-link" href="#">3</a>
+                      </li>
+                      <li class="page-item disabled">
+                        <a class="page-link">Next</a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
               </div>
               <div
                 class="tab-pane fade"
