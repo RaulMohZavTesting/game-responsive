@@ -22,3 +22,12 @@
 .animation-title:hover {
   font-size: 50px;
 }
+
+.line-menu-game {
+  border: 1px solid grey;
+  height: 1px;
+  width: 90%;
+  max-width: 200px;
+  padding: 0;
+  margin: 20px auto 20px auto;
+}

@@ -39,7 +39,7 @@
             aria-orientation="vertical"
           >
             <button
-              class="nav-link active"
+              class="nav-link active mt-2"
               id="v-pills-home-tab"
               data-bs-toggle="pill"
               data-bs-target="#v-pills-home"
@@ -50,6 +50,7 @@
             >
               <i class="bi bi-speedometer2 m-2"></i>Dashboard
             </button>
+            <div class="line-menu-game"></div>
             <button
               class="nav-link"
               id="v-pills-spaceships-tab"
@@ -74,6 +75,7 @@
             >
               <i class="bi bi-broadcast m-2"></i>Space Stations
             </button>
+            <div class="line-menu-game"></div>
             <button
               class="nav-link"
               id="v-pills-battlefield-tab"
@@ -86,6 +88,7 @@
             >
               <i class="bi bi-flag m-2"></i>Batalle Field
             </button>
+            <div class="line-menu-game"></div>
             <button
               class="nav-link"
               id="v-pills-Marketplace-tab"
@@ -98,6 +101,7 @@
             >
               <i class="bi bi-shop m-2"></i>Marketplace
             </button>
+            <div class="line-menu-game"></div>
             <button
               class="nav-link"
               id="v-pills-Scholarship-tab"
@@ -351,7 +355,7 @@
                       aria-controls="pills-home"
                       aria-selected="true"
                     >
-                      STORE
+                      <i class="bi bi-shop mx-2"></i> STORE
                     </button>
                   </li>
                   <li class="nav-item" role="presentation">
@@ -365,7 +369,7 @@
                       aria-controls="pills-spz"
                       aria-selected="false"
                     >
-                      SPACE Z STORE
+                      <i class="bi bi-person-workspace mx-2"></i> SPACE Z STORE
                     </button>
                   </li>
                   <li class="nav-item" role="presentation">
@@ -379,7 +383,7 @@
                       aria-controls="pills-profile"
                       aria-selected="false"
                     >
-                      MY OFFERS
+                      <i class="bi bi-tags-fill mx-2"></i> MY OFFERS
                     </button>
                   </li>
                 </ul>
@@ -400,21 +404,29 @@
                     role="tabpanel"
                     aria-labelledby="pills-home-tab"
                   >
-                    <select class="caja">
-                      <option selected>Filtred by Price</option>
-                      <option>Low to high</option>
-                      <option>High to low</option>
-                    </select>
-                    <select class="caja">
-                      <option selected>Filtred by Level</option>
-                      <option>Low to high</option>
-                      <option>High to low</option>
-                    </select>
-                    <select class="caja">
-                      <option selected>Filtred by Rarity</option>
-                      <option>1 to 5</option>
-                      <option>5 to 1</option>
-                    </select>
+                    <div class="row">
+                      <div class="col-12 py-2 col-md-4">
+                        <select class="caja">
+                          <option selected>Filtred by Price</option>
+                          <option>Low to high</option>
+                          <option>High to low</option>
+                        </select>
+                      </div>
+                      <div class="col-12 py-2 col-md-4">
+                        <select class="caja">
+                          <option selected>Filtred by Level</option>
+                          <option>Low to high</option>
+                          <option>High to low</option>
+                        </select>
+                      </div>
+                      <div class="col-12 py-2 col-md-4">
+                        <select class="caja">
+                          <option selected>Filtred by Rarity</option>
+                          <option>1 to 5</option>
+                          <option>5 to 1</option>
+                        </select>
+                      </div>
+                    </div>
 
                     <div>
                       <form
@@ -430,25 +442,32 @@
                       >
                         <div class="d-flex justify-content-center">
                           <br />
-                          <label for="inputPassword2" class="visually-hidden"
-                            >Search by ID</label
-                          >
-                          <input
-                            type="text"
-                            class="form-control"
-                            id="inputPassword2"
-                            placeholder="Search by ID"
-                          />
-
-                          <!-- Button trigger modal -->
-                          <button
-                            type="button"
-                            class="btn btn-primary"
-                            data-bs-toggle="modal"
-                            data-bs-target="#staticBackdrop"
-                          >
-                            Search
-                          </button>
+                          <div class="row">
+                            <div class="col-12 col-md-6 py-2">
+                              <label
+                                for="inputPassword2"
+                                class="visually-hidden"
+                                >Search by ID</label
+                              >
+                              <input
+                                type="text"
+                                class="form-control"
+                                id="inputPassword2"
+                                placeholder="Search by ID"
+                              />
+                            </div>
+                            <div class="col-12 col-md-6 py-2">
+                              <!-- Button trigger modal -->
+                              <button
+                                type="button"
+                                class="btn btn-primary"
+                                data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop"
+                              >
+                                Search
+                              </button>
+                            </div>
+                          </div>
                         </div>
                       </form>
 
@@ -481,117 +500,184 @@
                   >
                     <br /><br />
                     <!-- CARD -->
-                    <div class="cont-card">
-                      <div
-                        class="card text-white bg-dark mb-3 border-secondary"
-                        style="width: 13rem"
-                      >
-                        <br />
-                        <img
-                          src="img/estacion1.png"
+                    <div class="py-3">
+                      <div class="row">
+                        <div
                           class="
-                            card
-                            text-white
-                            bg-secondary
-                            mb-3
-                            rounded
-                            mx-auto
-                            d-block
+                            col-12 col-md-6 col-lg-3
+                            d-flex
+                            justify-content-center
                           "
-                          alt="..."
-                        />
-                        <div class="card-body">
-                          <h5 class="card-title">Eridanus</h5>
-                          <p class="card-text">
-                            Refills the gasoline of 1 spaceships during 7 days.
-                          </p>
-                          <br />
-                          <a href="#" class="btn btn-secondary">BUY 7$</a>
+                        >
+                          <div
+                            class="
+                              card
+                              text-white
+                              mx-2
+                              bg-dark
+                              mb-3
+                              border-secondary
+                            "
+                            style="width: 13rem"
+                          >
+                            <br />
+                            <img
+                              src="assets/estacion1.png"
+                              class="
+                                card
+                                text-white
+                                bg-secondary
+                                mb-3
+                                rounded
+                                mx-auto
+                                d-block
+                              "
+                              alt="..."
+                            />
+                            <div class="card-body">
+                              <h5 class="card-title text-white">Eridanus</h5>
+                              <p class="card-text text-white">
+                                Refills the gasoline of 1 spaceships during 7
+                                days.
+                              </p>
+                              <br />
+                              <a href="#" class="btn btn-secondary">BUY 7$</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="
+                            col-12 col-md-6 col-lg-3
+                            d-flex
+                            justify-content-center
+                          "
+                        >
+                          <div
+                            class="
+                              card
+                              text-white
+                              mx-2
+                              bg-dark
+                              mb-3
+                              border-secondary
+                            "
+                            style="width: 13rem"
+                          >
+                            <br />
+                            <img
+                              src="assets/estacion2.png"
+                              class="
+                                card
+                                text-white
+                                bg-secondary
+                                mb-3
+                                rounded
+                                mx-auto
+                                d-block
+                              "
+                              class="img-thumbnail"
+                              alt="..."
+                            />
+                            <div class="card-body">
+                              <h5 class="card-title text-white">Caelum</h5>
+                              <p class="card-text text-white">
+                                Refills the gasoline of 5 spaceships during 15
+                                days.
+                              </p>
+                              <br />
+                              <a href="#" class="btn btn-secondary">BUY 20$</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="
+                            col-12 col-md-6 col-lg-3
+                            d-flex
+                            justify-content-center
+                          "
+                        >
+                          <div
+                            class="
+                              card
+                              text-white
+                              mx-2
+                              bg-dark
+                              mb-3
+                              border-secondary
+                            "
+                            style="width: 13rem"
+                          >
+                            <br />
+                            <img
+                              src="assets/estacion3.png"
+                              class="
+                                card
+                                text-white
+                                bg-secondary
+                                mb-3
+                                rounded
+                                mx-auto
+                                d-block
+                              "
+                              class="img-thumbnail"
+                              alt="..."
+                            />
+                            <div class="card-body">
+                              <h5 class="card-title text-white">Gemini</h5>
+                              <p class="card-text text-white">
+                                Refills the gasoline of 10 spaceships during 15
+                                days.
+                              </p>
+                              <br />
+                              <a href="#" class="btn btn-secondary">BUY 40$</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="
+                            col-12 col-md-6 col-lg-3
+                            d-flex
+                            justify-content-center
+                          "
+                        >
+                          <div
+                            class="
+                              card
+                              text-white
+                              mx-2
+                              bg-dark
+                              mb-3
+                              border-secondary
+                            "
+                            style="width: 13rem"
+                          >
+                            <br />
+                            <img
+                              src="assets/spaceships.png"
+                              class="
+                                card
+                                text-white
+                                bg-secondary
+                                mb-3
+                                rounded
+                                mx-auto
+                                d-block
+                              "
+                              class="img-thumbnail"
+                              alt="..."
+                            />
+                            <div class="card-body">
+                              <h5 class="card-title text-white">Spaceships</h5>
+                              <p class="card-text text-white">
+                                1 spaceships - random rarity
+                              </p>
+                              <br />
+                              <a href="#" class="btn btn-secondary">BUY 25$</a>
+                            </div>
+                          </div>
                         </div>
                       </div>
-                      <div
-                        class="card text-white bg-dark mb-3 border-secondary"
-                        style="width: 13rem"
-                      >
-                        <br />
-                        <img
-                          src="img/estacion2.png"
-                          class="
-                            card
-                            text-white
-                            bg-secondary
-                            mb-3
-                            rounded
-                            mx-auto
-                            d-block
-                          "
-                          class="img-thumbnail"
-                          alt="..."
-                        />
-                        <div class="card-body">
-                          <h5 class="card-title">Caelum</h5>
-                          <p class="card-text">
-                            Refills the gasoline of 5 spaceships during 15 days.
-                          </p>
-                          <br />
-                          <a href="#" class="btn btn-secondary">BUY 20$</a>
-                        </div>
-                      </div>
-                      <div
-                        class="card text-white bg-dark mb-3 border-secondary"
-                        style="width: 13rem"
-                      >
-                        <br />
-                        <img
-                          src="img/estacion3.png"
-                          class="
-                            card
-                            text-white
-                            bg-secondary
-                            mb-3
-                            rounded
-                            mx-auto
-                            d-block
-                          "
-                          class="img-thumbnail"
-                          alt="..."
-                        />
-                        <div class="card-body">
-                          <h5 class="card-title">Gemini</h5>
-                          <p class="card-text">
-                            Refills the gasoline of 10 spaceships during 15
-                            days.
-                          </p>
-                          <br />
-                          <a href="#" class="btn btn-secondary">BUY 40$</a>
-                        </div>
-                      </div>
-                      <div
-                        class="card text-white bg-dark mb-3 border-secondary"
-                        style="width: 13rem"
-                      >
-                        <br />
-                        <img
-                          src="img/spaceships.png"
-                          class="
-                            card
-                            text-white
-                            bg-secondary
-                            mb-3
-                            rounded
-                            mx-auto
-                            d-block
-                          "
-                          class="img-thumbnail"
-                          alt="..."
-                        />
-                        <div class="card-body">
-                          <h5 class="card-title">Spaceships</h5>
-                          <p class="card-text">1 spaceships - random rarity</p>
-                          <br /><br />
-                          <a href="#" class="btn btn-secondary">BUY 25$</a>
-                        </div>
-                      </div>
+                      <!-- ------------------------- -->
                     </div>
                   </div>
 
@@ -603,12 +689,13 @@
                     aria-labelledby="pills-profile-tab"
                   >
                     <br />
-                    <div class="myoffer-centrar">
-                      <button type="button" class="btn btn-primary btn-lg">
-                        SELL SPACESHIP
+                    <div class="d-flex justify-content-center">
+                      <button type="button" class="btn btn-primary btn-lg mx-2">
+                        <i class="bi bi-arrows-fullscreen mx-2"></i> SELL
+                        SPACESHIP
                       </button>
-                      <button type="button" class="btn btn-primary btn-lg">
-                        REMOVE OFFER
+                      <button type="button" class="btn btn-primary btn-lg mx-2">
+                        <i class="bi bi-trash-fill mx-2"></i> REMOVE OFFER
                       </button>
                     </div>
                   </div>
