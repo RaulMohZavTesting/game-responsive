@@ -331,13 +331,288 @@
                   </div>
                 </div>
               </div>
+              <!-- --------------------------------------------------- -->
               <div
-                class="tab-pane fade"
+                class="tab-pane fade container"
                 id="v-pills-Marketplace"
                 role="tabpanel"
                 aria-labelledby="v-pills-Marketplace-tab"
               >
-                tienda
+                <!-- MARKET TABS -->
+                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link active"
+                      id="pills-home-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#pills-home"
+                      type="button"
+                      role="tab"
+                      aria-controls="pills-home"
+                      aria-selected="true"
+                    >
+                      STORE
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link"
+                      id="pills-spz-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#pills-spz"
+                      type="button"
+                      role="tab"
+                      aria-controls="pills-spz"
+                      aria-selected="false"
+                    >
+                      SPACE Z STORE
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link btn-success"
+                      id="pills-profile-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#pills-profile"
+                      type="button"
+                      role="tab"
+                      aria-controls="pills-profile"
+                      aria-selected="false"
+                    >
+                      MY OFFERS
+                    </button>
+                  </li>
+                </ul>
+                <!-- CONTENIDO MARKET TABS -->
+                <div class="tab-content" id="pills-tabContent">
+                  <!-- STORE -->
+                  <div
+                    class="
+                      mt-3
+                      tab-pane
+                      fade
+                      show
+                      active
+                      btn btn-secondary
+                      align-self-center
+                    "
+                    id="pills-home"
+                    role="tabpanel"
+                    aria-labelledby="pills-home-tab"
+                  >
+                    <select class="caja">
+                      <option selected>Filtred by Price</option>
+                      <option>Low to high</option>
+                      <option>High to low</option>
+                    </select>
+                    <select class="caja">
+                      <option selected>Filtred by Level</option>
+                      <option>Low to high</option>
+                      <option>High to low</option>
+                    </select>
+                    <select class="caja">
+                      <option selected>Filtred by Rarity</option>
+                      <option>1 to 5</option>
+                      <option>5 to 1</option>
+                    </select>
+
+                    <div>
+                      <form
+                        class="
+                          row
+                          my-3
+                          g-3
+                          w-50
+                          mx-auto
+                          d-flex
+                          justify-content-center
+                        "
+                      >
+                        <div class="d-flex justify-content-center">
+                          <br />
+                          <label for="inputPassword2" class="visually-hidden"
+                            >Search by ID</label
+                          >
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="inputPassword2"
+                            placeholder="Search by ID"
+                          />
+
+                          <!-- Button trigger modal -->
+                          <button
+                            type="button"
+                            class="btn btn-primary"
+                            data-bs-toggle="modal"
+                            data-bs-target="#staticBackdrop"
+                          >
+                            Search
+                          </button>
+                        </div>
+                      </form>
+
+                      <!-- Modal -->
+                      <!--                                     <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                      <div class="modal-dialog">
+                                        <div class="modal-content">
+                                          <div class="modal-header">
+                                            <h5 class="modal-title" id="staticBackdropLabel">Error</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                          </div>
+                                          <div class="modal-body">
+                                            <p style="color: black;">Please enter a correct ID</p>
+                                          </div>
+                                          <div class="modal-footer search-1">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div> -->
+                    </div>
+                  </div>
+
+                  <!-- SPACE Z STORE -->
+                  <div
+                    class="tab-pane fade"
+                    id="pills-spz"
+                    role="tabpanel"
+                    aria-labelledby="pills-spz-tab"
+                  >
+                    <br /><br />
+                    <!-- CARD -->
+                    <div class="cont-card">
+                      <div
+                        class="card text-white bg-dark mb-3 border-secondary"
+                        style="width: 13rem"
+                      >
+                        <br />
+                        <img
+                          src="img/estacion1.png"
+                          class="
+                            card
+                            text-white
+                            bg-secondary
+                            mb-3
+                            rounded
+                            mx-auto
+                            d-block
+                          "
+                          alt="..."
+                        />
+                        <div class="card-body">
+                          <h5 class="card-title">Eridanus</h5>
+                          <p class="card-text">
+                            Refills the gasoline of 1 spaceships during 7 days.
+                          </p>
+                          <br />
+                          <a href="#" class="btn btn-secondary">BUY 7$</a>
+                        </div>
+                      </div>
+                      <div
+                        class="card text-white bg-dark mb-3 border-secondary"
+                        style="width: 13rem"
+                      >
+                        <br />
+                        <img
+                          src="img/estacion2.png"
+                          class="
+                            card
+                            text-white
+                            bg-secondary
+                            mb-3
+                            rounded
+                            mx-auto
+                            d-block
+                          "
+                          class="img-thumbnail"
+                          alt="..."
+                        />
+                        <div class="card-body">
+                          <h5 class="card-title">Caelum</h5>
+                          <p class="card-text">
+                            Refills the gasoline of 5 spaceships during 15 days.
+                          </p>
+                          <br />
+                          <a href="#" class="btn btn-secondary">BUY 20$</a>
+                        </div>
+                      </div>
+                      <div
+                        class="card text-white bg-dark mb-3 border-secondary"
+                        style="width: 13rem"
+                      >
+                        <br />
+                        <img
+                          src="img/estacion3.png"
+                          class="
+                            card
+                            text-white
+                            bg-secondary
+                            mb-3
+                            rounded
+                            mx-auto
+                            d-block
+                          "
+                          class="img-thumbnail"
+                          alt="..."
+                        />
+                        <div class="card-body">
+                          <h5 class="card-title">Gemini</h5>
+                          <p class="card-text">
+                            Refills the gasoline of 10 spaceships during 15
+                            days.
+                          </p>
+                          <br />
+                          <a href="#" class="btn btn-secondary">BUY 40$</a>
+                        </div>
+                      </div>
+                      <div
+                        class="card text-white bg-dark mb-3 border-secondary"
+                        style="width: 13rem"
+                      >
+                        <br />
+                        <img
+                          src="img/spaceships.png"
+                          class="
+                            card
+                            text-white
+                            bg-secondary
+                            mb-3
+                            rounded
+                            mx-auto
+                            d-block
+                          "
+                          class="img-thumbnail"
+                          alt="..."
+                        />
+                        <div class="card-body">
+                          <h5 class="card-title">Spaceships</h5>
+                          <p class="card-text">1 spaceships - random rarity</p>
+                          <br /><br />
+                          <a href="#" class="btn btn-secondary">BUY 25$</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- MY OFFERS -->
+                  <div
+                    class="tab-pane fade"
+                    id="pills-profile"
+                    role="tabpanel"
+                    aria-labelledby="pills-profile-tab"
+                  >
+                    <br />
+                    <div class="myoffer-centrar">
+                      <button type="button" class="btn btn-primary btn-lg">
+                        SELL SPACESHIP
+                      </button>
+                      <button type="button" class="btn btn-primary btn-lg">
+                        REMOVE OFFER
+                      </button>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div
                 class="tab-pane fade"
